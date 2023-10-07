@@ -132,6 +132,7 @@ class Adapter() : RecyclerView.Adapter<Adapter.ViewHolder>() {
         var amount: TextView
         var orderno: TextView
         var frozen : TextView
+        var alipayRebate : TextView
 
 
         init {
@@ -141,6 +142,7 @@ class Adapter() : RecyclerView.Adapter<Adapter.ViewHolder>() {
             amount = view.findViewById(R.id.amount)
             orderno = view.findViewById(R.id.orderno)
             frozen = view.findViewById(R.id.frozen);
+            alipayRebate = view.findViewById(R.id.alipayRebate)
 
 
         }
@@ -163,6 +165,8 @@ class Adapter() : RecyclerView.Adapter<Adapter.ViewHolder>() {
         holder.amount.text = "佣金￥"+info.commission
 
         holder.frozen.text = "进行中金额￥" + info.frozen
+
+        holder.alipayRebate.text = "支付宝佣金￥" + info.alipayRebate
 
 
     }

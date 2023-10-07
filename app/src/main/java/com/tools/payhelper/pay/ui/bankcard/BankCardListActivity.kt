@@ -8,6 +8,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -19,6 +20,7 @@ import com.jingyu.pay.ui.group.*
 import com.tools.payhelper.R
 import com.tools.payhelper.pay.ToastManager
 import com.tools.payhelper.pay.ui.bankcard.AddCardDialog
+import com.tools.payhelper.pay.ui.bankcard.AddPayCardDialog
 import com.tools.payhelper.pay.ui.bankcard.BanCardListData
 
 class BankCardListActivity : AppCompatActivity() {
@@ -84,20 +86,52 @@ class BankCardListActivity : AppCompatActivity() {
         })
 
         fab.setOnClickListener {
-            val dialog = AddCardDialog(this)
-            dialog.setAddBankCallback {
-                if (it!=null){
-                    runOnUiThread {
-                        ToastManager.showToastCenter(this,it.msg)
-                        getBankCardList()
+            addAlert()
 
-                    }
-                }
-            }
-            dialog.show()
 
         }
 
+    }
+    private lateinit var lunch: List<String>
+
+    fun addAlert(){
+        lunch = listOf(getString(R.string.add_bankcard),
+            getString(R.string.add_pay), )
+        AlertDialog.Builder(this@BankCardListActivity)
+            .setItems(lunch.toTypedArray()) { _, which ->
+                val name = lunch[which]
+                when(name){
+                    getString(R.string.add_bankcard) -> {
+                        val dialog = AddCardDialog(this)
+                        dialog.setAddBankCallback {
+                            if (it!=null){
+                                runOnUiThread {
+                                    ToastManager.showToastCenter(this,it.msg)
+                                    getBankCardList()
+
+                                }
+                            }
+                        }
+                        dialog.show()
+                    }
+                    getString(R.string.add_pay) -> {
+
+                        val dialog = AddPayCardDialog(this)
+                        dialog.setAddBankCallback {
+                            if (it!=null){
+                                runOnUiThread {
+                                    ToastManager.showToastCenter(this,it.msg)
+                                    getBankCardList()
+
+                                }
+                            }
+                        }
+                        dialog.show()
+                    }
+
+                }
+            }
+            .show()
     }
 
     fun getBankCardList(){

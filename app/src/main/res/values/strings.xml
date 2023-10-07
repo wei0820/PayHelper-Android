@@ -32,6 +32,9 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">銀行卡列表</string>
 
+    <string name="add_bankcard">新增银行卡</string>
+    <string name="add_pay">新增支付宝转帐</string>
+
 
 
     <string-array name="planets_array">
@@ -39,6 +42,7 @@
     <item>錯誤訊息</item>
     <item>成功回調訊息</item>
     <item>錯誤回調訊息</item>
+
 </string-array>
 
 </resources>

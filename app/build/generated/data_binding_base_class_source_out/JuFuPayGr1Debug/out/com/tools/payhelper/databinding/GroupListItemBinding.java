@@ -19,6 +19,9 @@ public final class GroupListItemBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final TextView alipayRebate;
+
+  @NonNull
   public final TextView amount;
 
   @NonNull
@@ -39,10 +42,12 @@ public final class GroupListItemBinding implements ViewBinding {
   @NonNull
   public final TextView time;
 
-  private GroupListItemBinding(@NonNull LinearLayout rootView, @NonNull TextView amount,
-      @NonNull TextView bankname, @NonNull TextView cardno, @NonNull TextView frozen,
-      @NonNull LinearLayout layout, @NonNull TextView orderno, @NonNull TextView time) {
+  private GroupListItemBinding(@NonNull LinearLayout rootView, @NonNull TextView alipayRebate,
+      @NonNull TextView amount, @NonNull TextView bankname, @NonNull TextView cardno,
+      @NonNull TextView frozen, @NonNull LinearLayout layout, @NonNull TextView orderno,
+      @NonNull TextView time) {
     this.rootView = rootView;
+    this.alipayRebate = alipayRebate;
     this.amount = amount;
     this.bankname = bankname;
     this.cardno = cardno;
@@ -79,6 +84,12 @@ public final class GroupListItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.alipayRebate;
+      TextView alipayRebate = rootView.findViewById(id);
+      if (alipayRebate == null) {
+        break missingId;
+      }
+
       id = R.id.amount;
       TextView amount = rootView.findViewById(id);
       if (amount == null) {
@@ -121,8 +132,8 @@ public final class GroupListItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new GroupListItemBinding((LinearLayout) rootView, amount, bankname, cardno, frozen,
-          layout, orderno, time);
+      return new GroupListItemBinding((LinearLayout) rootView, alipayRebate, amount, bankname,
+          cardno, frozen, layout, orderno, time);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2113,6 +2113,7 @@ id adjust_height
 id adjust_width
 id alertTitle
 id aligned
+id alipayRebate
 id all
 id allStates
 id always
@@ -2754,6 +2755,7 @@ layout activity_transaction
 layout activity_user_login
 layout activity_wechat
 layout add_bank_card
+layout add_pay_card
 layout app_bar_main
 layout bank_item_view
 layout bankcard_item_view
@@ -2944,6 +2946,8 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string add_bankcard
+string add_pay
 string app_name
 string appbar_scrolling_view_behavior
 string appname

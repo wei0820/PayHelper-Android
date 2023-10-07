@@ -62,8 +62,7 @@ class BankCardViewModel : ViewModel() {
     fun  setStopBankCard(context: Context, id : String):LiveData<StopBankCardData>{
         bankCardDateModel.setStopBankCard(context,id, object :BankCardDateModel.BankCardResponse {
             override fun getResponse(s: String) {
-                Log.d("bankcard",s)
-                viewModelScope.launch {
+               viewModelScope.launch {
                     if (!s.isEmpty()){
                         var data = Gson().fromJson(s,StopBankCardData::class.java)
                         if (data !=null){
