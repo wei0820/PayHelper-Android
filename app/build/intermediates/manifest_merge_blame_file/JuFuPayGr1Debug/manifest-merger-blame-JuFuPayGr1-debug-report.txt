@@ -103,500 +103,499 @@
 45-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:42:9-52
 46        android:supportsRtl="true"
 46-->[ch.ielse:switchbutton:1.0.1] /Users/JackPan/.gradle/caches/transforms-3/f4caef07867d3b5440ac86c14222f3b3/transformed/jetified-switchbutton-1.0.1/AndroidManifest.xml:13:9-35
-47        android:testOnly="true"
-48        android:theme="@style/Theme.JingyuPay"
-48-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:49:9-47
-49        android:usesCleartextTraffic="true" >
-49-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:50:9-44
-50
-51        <!-- <activity -->
-52        <!-- android:name=".ui.login.DetailActivity" -->
-53        <!-- android:exported="true" -->
-54        <!-- android:label="@string/title_activity_home" -->
-55        <!-- android:launchMode="singleInstance" -->
-56        <!-- android:screenOrientation="portrait" -->
-57        <!-- android:theme="@style/AppTheme.NoActionBar" -->
-58        <!-- android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden"> -->
-59        <!-- <meta-data -->
-60        <!-- android:name="android.app.lib_name" -->
-61        <!-- android:value="" /> -->
+47        android:theme="@style/Theme.JingyuPay"
+47-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:49:9-47
+48        android:usesCleartextTraffic="true" >
+48-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:50:9-44
+49
+50        <!-- <activity -->
+51        <!-- android:name=".ui.login.DetailActivity" -->
+52        <!-- android:exported="true" -->
+53        <!-- android:label="@string/title_activity_home" -->
+54        <!-- android:launchMode="singleInstance" -->
+55        <!-- android:screenOrientation="portrait" -->
+56        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+57        <!-- android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden"> -->
+58        <!-- <meta-data -->
+59        <!-- android:name="android.app.lib_name" -->
+60        <!-- android:value="" /> -->
+61
 62
-63
-64        <!-- </activity> -->
-65        <!-- <activity -->
-66        <!-- android:name=".ui.login.UserLoginActivity" -->
-67        <!-- android:exported="true" -->
-68        <!-- android:label="@string/app_name" -->
-69        <!-- android:launchMode="singleInstance" -->
-70        <!-- android:screenOrientation="portrait" -->
-71        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" -->
-72        <!-- android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden"> -->
+63        <!-- </activity> -->
+64        <!-- <activity -->
+65        <!-- android:name=".ui.login.UserLoginActivity" -->
+66        <!-- android:exported="true" -->
+67        <!-- android:label="@string/app_name" -->
+68        <!-- android:launchMode="singleInstance" -->
+69        <!-- android:screenOrientation="portrait" -->
+70        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" -->
+71        <!-- android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden"> -->
+72
 73
-74
-75        <!-- </activity> -->
-76
-77        <activity
-77-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:79:9-98:20
-78            android:name="com.tools.payhelper.Main22Activity"
-78-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:80:13-43
-79            android:exported="true"
-79-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:81:13-36
-80            android:label="@string/app_name"
-80-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:82:13-45
-81            android:launchMode="singleInstance"
-81-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:83:13-48
-82            android:screenOrientation="portrait"
-82-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:84:13-49
-83            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
-83-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:85:13-80
-84            android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden" >
-84-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:86:13-82
-85
-86            <!-- <intent-filter> -->
-87            <!-- <action android:name="android.intent.action.MAIN" /> -->
+74        <!-- </activity> -->
+75
+76        <activity
+76-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:79:9-98:20
+77            android:name="com.tools.payhelper.Main22Activity"
+77-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:80:13-43
+78            android:exported="true"
+78-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:81:13-36
+79            android:label="@string/app_name"
+79-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:82:13-45
+80            android:launchMode="singleInstance"
+80-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:83:13-48
+81            android:screenOrientation="portrait"
+81-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:84:13-49
+82            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+82-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:85:13-80
+83            android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden" >
+83-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:86:13-82
+84
+85            <!-- <intent-filter> -->
+86            <!-- <action android:name="android.intent.action.MAIN" /> -->
+87
 88
-89
-90            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-91            <!-- </intent-filter> -->
-92
-93        </activity>
-94
-95        <service
-95-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:100:9-104:49
-96            android:name="com.tools.payhelper.DaemonService"
-96-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:101:13-42
-97            android:enabled="true"
-97-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:102:13-35
-98            android:exported="false"
-98-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:103:13-37
-99            android:process=":daemon_service" />
-99-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:104:13-46
-100
-101        <provider
-102            android:name="androidx.core.content.FileProvider"
-102-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:107:13-62
-103            android:authorities="com.jingyu.pay.fileProvider"
-103-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:108:13-64
-104            android:exported="false"
-104-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:109:13-37
-105            android:grantUriPermissions="true" >
-105-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:110:13-47
-106            <meta-data
-106-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:111:13-113:54
-107                android:name="android.support.FILE_PROVIDER_PATHS"
-107-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:112:17-67
-108                android:resource="@xml/file_paths" />
-108-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:113:17-51
-109        </provider>
-110
-111        <service
-111-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:116:9-124:19
-112            android:name="com.tools.payhelper.WechatNotificationListenerService"
-112-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:117:13-62
-113            android:enabled="true"
-113-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:118:13-35
-114            android:label="@string/app_name"
-114-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:119:13-45
-115            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
-115-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:120:13-87
-116            <intent-filter>
-116-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:121:13-123:29
-117                <action android:name="android.service.notification.NotificationListenerService" />
-117-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:122:17-99
-117-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:122:25-96
-118            </intent-filter>
-119        </service>
-120
-121        <!-- <receiver -->
-122        <!-- android:name=".ui.NotificationClickReceiver"> -->
-123        <!-- <intent-filter> -->
-124        <!-- <action android:name="android.intent.action.ACTION_POWER_CONNECTED" /> -->
-125        <!-- </intent-filter> -->
-126        <!-- </receiver> -->
+89            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+90            <!-- </intent-filter> -->
+91
+92        </activity>
+93
+94        <service
+94-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:100:9-104:49
+95            android:name="com.tools.payhelper.DaemonService"
+95-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:101:13-42
+96            android:enabled="true"
+96-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:102:13-35
+97            android:exported="false"
+97-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:103:13-37
+98            android:process=":daemon_service" />
+98-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:104:13-46
+99
+100        <provider
+101            android:name="androidx.core.content.FileProvider"
+101-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:107:13-62
+102            android:authorities="com.jingyu.pay.fileProvider"
+102-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:108:13-64
+103            android:exported="false"
+103-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:109:13-37
+104            android:grantUriPermissions="true" >
+104-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:110:13-47
+105            <meta-data
+105-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:111:13-113:54
+106                android:name="android.support.FILE_PROVIDER_PATHS"
+106-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:112:17-67
+107                android:resource="@xml/file_paths" />
+107-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:113:17-51
+108        </provider>
+109
+110        <service
+110-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:116:9-124:19
+111            android:name="com.tools.payhelper.WechatNotificationListenerService"
+111-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:117:13-62
+112            android:enabled="true"
+112-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:118:13-35
+113            android:label="@string/app_name"
+113-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:119:13-45
+114            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+114-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:120:13-87
+115            <intent-filter>
+115-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:121:13-123:29
+116                <action android:name="android.service.notification.NotificationListenerService" />
+116-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:122:17-99
+116-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:122:25-96
+117            </intent-filter>
+118        </service>
+119
+120        <!-- <receiver -->
+121        <!-- android:name=".ui.NotificationClickReceiver"> -->
+122        <!-- <intent-filter> -->
+123        <!-- <action android:name="android.intent.action.ACTION_POWER_CONNECTED" /> -->
+124        <!-- </intent-filter> -->
+125        <!-- </receiver> -->
+126
 127
-128
-129        <!-- <activity -->
-130        <!-- android:name=".wechat.WechatActivity" -->
-131        <!-- android:exported="true" -->
-132        <!-- android:label="@string/app_name" -->
-133        <!-- android:launchMode="singleInstance" -->
-134        <!-- android:screenOrientation="portrait" -->
-135        <!-- android:theme="@android:style/Theme.Light.NoTitleBar" -->
-136        <!-- android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden"> -->
+128        <!-- <activity -->
+129        <!-- android:name=".wechat.WechatActivity" -->
+130        <!-- android:exported="true" -->
+131        <!-- android:label="@string/app_name" -->
+132        <!-- android:launchMode="singleInstance" -->
+133        <!-- android:screenOrientation="portrait" -->
+134        <!-- android:theme="@android:style/Theme.Light.NoTitleBar" -->
+135        <!-- android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden"> -->
+136
 137
-138
-139        <!-- <intent-filter> -->
-140        <!-- <action android:name="android.intent.action.MAIN" /> -->
+138        <!-- <intent-filter> -->
+139        <!-- <action android:name="android.intent.action.MAIN" /> -->
+140
 141
-142
-143        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-144        <!-- </intent-filter> -->
-145        <!-- </activity> -->
-146        <activity
-146-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:150:9-157:20
-147            android:name="com.jingyu.pay.ui.group.ReportDayActivity"
-147-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:152:13-69
-148            android:exported="false"
-148-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:153:13-37
-149            android:screenOrientation="portrait" >
-149-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:151:13-49
-150            <meta-data
-150-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-151                android:name="android.app.lib_name"
-151-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-152                android:value="" />
-152-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-153        </activity>
-154        <activity
-154-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:158:9-166:20
-155            android:name="com.jingyu.pay.ui.bankcard.BankCardListActivity"
-155-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:161:13-75
-156            android:exported="false"
-156-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:162:13-37
-157            android:screenOrientation="portrait" >
-157-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:159:13-49
-158            <meta-data
-158-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-159                android:name="android.app.lib_name"
-159-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-160                android:value="" />
-160-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-161        </activity>
-162        <activity
-162-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:167:9-176:20
-163            android:name="com.jingyu.pay.ui.group.GroupReportActivity"
-163-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:170:13-71
-164            android:exported="false"
-164-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:171:13-37
-165            android:screenOrientation="portrait"
-165-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:168:13-49
-166            android:theme="@style/Theme.JingyuPay.NoActionBar" >
-166-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:172:13-63
-167            <meta-data
-167-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-168                android:name="android.app.lib_name"
-168-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-169                android:value="" />
-169-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-170        </activity>
-171        <activity
-171-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:177:9-186:20
-172            android:name="com.jingyu.pay.ui.group.GroupReportTeamActivity"
-172-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:180:13-75
-173            android:exported="false"
-173-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:181:13-37
-174            android:screenOrientation="portrait"
-174-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:178:13-49
-175            android:theme="@style/Theme.JingyuPay.NoActionBar" >
-175-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:182:13-63
-176            <meta-data
-176-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-177                android:name="android.app.lib_name"
-177-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-178                android:value="" />
-178-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-179        </activity>
-180        <activity
-180-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:187:9-195:20
-181            android:name="com.jingyu.pay.ui.group.GroupListctivity"
-181-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:190:13-68
-182            android:exported="false"
-182-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:191:13-37
-183            android:screenOrientation="portrait" >
-183-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:188:13-49
-184            <meta-data
-184-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-185                android:name="android.app.lib_name"
-185-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-186                android:value="" />
-186-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-187        </activity>
-188        <activity
-188-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:196:9-204:20
-189            android:name="com.jingyu.pay.ui.transaction.TransactionActivity"
-189-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:199:13-77
-190            android:exported="false"
-190-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:200:13-37
-191            android:screenOrientation="portrait" >
-191-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:197:13-49
-192            <meta-data
-192-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-193                android:name="android.app.lib_name"
-193-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-194                android:value="" />
-194-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-195        </activity>
-196        <activity
-196-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:205:9-213:20
-197            android:name="com.jingyu.pay.ui.sellrecord.SellRecordActivity"
-197-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:208:13-75
-198            android:exported="false"
-198-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:209:13-37
-199            android:screenOrientation="portrait" >
-199-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:206:13-49
-200            <meta-data
-200-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-201                android:name="android.app.lib_name"
-201-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-202                android:value="" />
-202-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-203        </activity>
-204        <activity
-204-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:214:9-222:20
-205            android:name="com.jingyu.pay.ui.buyrecord.BuyRecordActivity"
-205-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:217:13-73
-206            android:exported="false"
-206-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:218:13-37
-207            android:screenOrientation="portrait" >
-207-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:215:13-49
-208            <meta-data
-208-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-209                android:name="android.app.lib_name"
-209-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-210                android:value="" />
-210-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-211        </activity>
-212        <activity
-212-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:223:9-232:20
-213            android:name="com.jingyu.pay.ui.purchasehistory.PurchaseHistoryActivity"
-213-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:226:13-85
-214            android:exported="false"
-214-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:227:13-37
-215            android:screenOrientation="portrait"
-215-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:224:13-49
-216            android:theme="@style/Theme.JingyuPay.NoActionBar" >
-216-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:228:13-63
-217            <meta-data
-217-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-218                android:name="android.app.lib_name"
-218-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-219                android:value="" />
-219-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-220        </activity>
-221        <activity
-221-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:233:9-248:20
-222            android:name="com.jingyu.pay.SplashActivity"
-222-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:236:13-57
-223            android:exported="true"
-223-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:237:13-36
-224            android:screenOrientation="portrait"
-224-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:234:13-49
-225            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
-225-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:238:13-80
-226            <intent-filter>
-226-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:239:13-243:29
-227                <action android:name="android.intent.action.MAIN" />
-227-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:240:17-69
-227-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:240:25-66
-228
-229                <category android:name="android.intent.category.LAUNCHER" />
-229-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:242:17-77
-229-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:242:27-74
-230            </intent-filter>
-231
-232            <meta-data
-232-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-233                android:name="android.app.lib_name"
-233-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-234                android:value="" />
-234-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-235        </activity>
-236        <activity
-236-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:249:9-258:20
-237            android:name="com.jingyu.pay.ui.login.LoginActivity"
-237-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:252:13-65
-238            android:exported="false"
-238-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:253:13-37
-239            android:screenOrientation="portrait"
-239-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:250:13-49
-240            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
-240-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:254:13-80
-241            <meta-data
-241-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-242                android:name="android.app.lib_name"
-242-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-243                android:value="" />
-243-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-244        </activity>
-245        <activity
-245-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:259:9-269:20
-246            android:name="com.jingyu.pay.MainActivity"
-246-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:262:13-55
-247            android:exported="true"
-247-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:263:13-36
-248            android:label="@string/app_name"
-248-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:264:13-45
-249            android:screenOrientation="portrait"
-249-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:260:13-49
-250            android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden" >
-250-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:265:13-82
-251            <meta-data
-251-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-252                android:name="android.app.lib_name"
-252-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-253                android:value="" />
-253-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-254        </activity>
-255        <activity
-255-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:270:9-278:20
-256            android:name="com.jingyu.pay.ui.accountchange.AccountChangeActivity"
-256-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:273:13-81
-257            android:exported="false"
-257-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:274:13-37
-258            android:screenOrientation="portrait" >
-258-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:271:13-49
-259            <meta-data
-259-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
-260                android:name="android.app.lib_name"
-260-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
-261                android:value="" />
-261-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
-262        </activity>
-263
-264        <meta-data
-264-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:280:9-282:36
-265            android:name="xposedmodule"
-265-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:281:13-40
-266            android:value="true" />
-266-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:282:13-33
-267        <meta-data
-267-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:283:9-285:36
-268            android:name="xposeddescription"
-268-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:284:13-45
-269            android:value="模块描述" />
-269-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:285:13-33
-270        <meta-data
-270-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:286:9-288:34
-271            android:name="xposedminversion"
-271-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:287:13-44
-272            android:value="54" />
-272-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:288:13-31
-273
-274        <!-- <activity -->
-275        <!-- android:name="com.journeyapps.barcodescanner.CaptureActivity" -->
-276        <!-- android:screenOrientation="fullSensor" -->
-277        <!-- tools:replace="screenOrientation" /> -->
-278        <service
-278-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:8:9-14:19
-279            android:name="com.google.firebase.components.ComponentDiscoveryService"
-279-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:9:13-84
-280            android:directBootAware="true"
-280-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:35:13-43
-281            android:exported="false" >
-281-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:10:13-37
-282            <meta-data
-282-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:11:13-13:85
-283                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
-283-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:12:17-126
-284                android:value="com.google.firebase.components.ComponentRegistrar" />
-284-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:13:17-82
-285            <meta-data
-285-->[com.google.firebase:firebase-database:20.0.6] /Users/JackPan/.gradle/caches/transforms-3/d0e84f73042dd2008be7495216931744/transformed/jetified-firebase-database-20.0.6/AndroidManifest.xml:32:13-34:85
-286                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-286-->[com.google.firebase:firebase-database:20.0.6] /Users/JackPan/.gradle/caches/transforms-3/d0e84f73042dd2008be7495216931744/transformed/jetified-firebase-database-20.0.6/AndroidManifest.xml:33:17-109
-287                android:value="com.google.firebase.components.ComponentRegistrar" />
-287-->[com.google.firebase:firebase-database:20.0.6] /Users/JackPan/.gradle/caches/transforms-3/d0e84f73042dd2008be7495216931744/transformed/jetified-firebase-database-20.0.6/AndroidManifest.xml:34:17-82
-288            <meta-data
-288-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/f97497420e00d2d11cd4d35ac93e9d03/transformed/jetified-firebase-common-ktx-20.1.2/AndroidManifest.xml:15:13-17:85
-289                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-289-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/f97497420e00d2d11cd4d35ac93e9d03/transformed/jetified-firebase-common-ktx-20.1.2/AndroidManifest.xml:16:17-113
-290                android:value="com.google.firebase.components.ComponentRegistrar" />
-290-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/f97497420e00d2d11cd4d35ac93e9d03/transformed/jetified-firebase-common-ktx-20.1.2/AndroidManifest.xml:17:17-82
-291            <meta-data
-291-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/af1d835a699794be57068f103dd73d84/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:31:13-33:85
-292                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-292-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/af1d835a699794be57068f103dd73d84/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:32:17-139
-293                android:value="com.google.firebase.components.ComponentRegistrar" />
-293-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/af1d835a699794be57068f103dd73d84/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:33:17-82
-294            <meta-data
-294-->[com.google.firebase:firebase-installations:17.0.2] /Users/JackPan/.gradle/caches/transforms-3/c0b4607924b7ae8265e1cf9d53bd2c00/transformed/jetified-firebase-installations-17.0.2/AndroidManifest.xml:18:13-20:85
-295                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-295-->[com.google.firebase:firebase-installations:17.0.2] /Users/JackPan/.gradle/caches/transforms-3/c0b4607924b7ae8265e1cf9d53bd2c00/transformed/jetified-firebase-installations-17.0.2/AndroidManifest.xml:19:17-127
-296                android:value="com.google.firebase.components.ComponentRegistrar" />
-296-->[com.google.firebase:firebase-installations:17.0.2] /Users/JackPan/.gradle/caches/transforms-3/c0b4607924b7ae8265e1cf9d53bd2c00/transformed/jetified-firebase-installations-17.0.2/AndroidManifest.xml:20:17-82
-297        </service>
-298
-299        <activity
-299-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:12:9-17:63
-300            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
-300-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:13:13-74
-301            android:configChanges="orientation|keyboardHidden"
-301-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:14:13-63
-302            android:screenOrientation="portrait"
-302-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:15:13-49
-303            android:theme="@style/Theme.AppCompat.NoActionBar"
-303-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:16:13-63
-304            android:windowSoftInputMode="stateAlwaysHidden" />
-304-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:17:13-60
-305
-306        <provider
-306-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:26:9-31:39
-307            android:name="com.google.firebase.provider.FirebaseInitProvider"
-307-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:27:13-77
-308            android:authorities="com.jingyu.pay.firebaseinitprovider"
-308-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:28:13-72
-309            android:directBootAware="true"
-309-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:29:13-43
-310            android:exported="false"
-310-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:30:13-37
-311            android:initOrder="100" />
-311-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:31:13-36
-312
-313        <activity
-313-->[com.google.android.gms:play-services-base:18.0.1] /Users/JackPan/.gradle/caches/transforms-3/f9ea41be9e44d87970e9a5f816f7ef1c/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-314            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-314-->[com.google.android.gms:play-services-base:18.0.1] /Users/JackPan/.gradle/caches/transforms-3/f9ea41be9e44d87970e9a5f816f7ef1c/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-315            android:exported="false"
-315-->[com.google.android.gms:play-services-base:18.0.1] /Users/JackPan/.gradle/caches/transforms-3/f9ea41be9e44d87970e9a5f816f7ef1c/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-316            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-316-->[com.google.android.gms:play-services-base:18.0.1] /Users/JackPan/.gradle/caches/transforms-3/f9ea41be9e44d87970e9a5f816f7ef1c/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-317
-318        <receiver
-318-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:29:9-33:20
-319            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-319-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:30:13-85
-320            android:enabled="true"
-320-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:31:13-35
-321            android:exported="false" >
-321-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:32:13-37
-322        </receiver>
-323
-324        <service
-324-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:35:9-38:40
-325            android:name="com.google.android.gms.measurement.AppMeasurementService"
-325-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:36:13-84
-326            android:enabled="true"
-326-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:37:13-35
-327            android:exported="false" />
-327-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:38:13-37
-328        <service
-328-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:39:9-43:72
-329            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-329-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:40:13-87
-330            android:enabled="true"
-330-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:41:13-35
-331            android:exported="false"
-331-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:42:13-37
-332            android:permission="android.permission.BIND_JOB_SERVICE" />
-332-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:43:13-69
-333
-334        <meta-data
-334-->[com.google.android.gms:play-services-basement:18.1.0] /Users/JackPan/.gradle/caches/transforms-3/271246067f474f6d5198887abc058e70/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-335            android:name="com.google.android.gms.version"
-335-->[com.google.android.gms:play-services-basement:18.1.0] /Users/JackPan/.gradle/caches/transforms-3/271246067f474f6d5198887abc058e70/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-336            android:value="@integer/google_play_services_version" />
-336-->[com.google.android.gms:play-services-basement:18.1.0] /Users/JackPan/.gradle/caches/transforms-3/271246067f474f6d5198887abc058e70/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-337
-338        <provider
-338-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-339            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-339-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-340            android:authorities="com.jingyu.pay.lifecycle-process"
-340-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-341            android:exported="false"
-341-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-342            android:multiprocess="true" />
-342-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-343    </application>
-344
-345</manifest>
+142        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+143        <!-- </intent-filter> -->
+144        <!-- </activity> -->
+145        <activity
+145-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:150:9-157:20
+146            android:name="com.jingyu.pay.ui.group.ReportDayActivity"
+146-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:152:13-69
+147            android:exported="false"
+147-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:153:13-37
+148            android:screenOrientation="portrait" >
+148-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:151:13-49
+149            <meta-data
+149-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+150                android:name="android.app.lib_name"
+150-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+151                android:value="" />
+151-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+152        </activity>
+153        <activity
+153-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:158:9-166:20
+154            android:name="com.jingyu.pay.ui.bankcard.BankCardListActivity"
+154-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:161:13-75
+155            android:exported="false"
+155-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:162:13-37
+156            android:screenOrientation="portrait" >
+156-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:159:13-49
+157            <meta-data
+157-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+158                android:name="android.app.lib_name"
+158-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+159                android:value="" />
+159-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+160        </activity>
+161        <activity
+161-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:167:9-176:20
+162            android:name="com.jingyu.pay.ui.group.GroupReportActivity"
+162-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:170:13-71
+163            android:exported="false"
+163-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:171:13-37
+164            android:screenOrientation="portrait"
+164-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:168:13-49
+165            android:theme="@style/Theme.JingyuPay.NoActionBar" >
+165-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:172:13-63
+166            <meta-data
+166-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+167                android:name="android.app.lib_name"
+167-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+168                android:value="" />
+168-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+169        </activity>
+170        <activity
+170-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:177:9-186:20
+171            android:name="com.jingyu.pay.ui.group.GroupReportTeamActivity"
+171-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:180:13-75
+172            android:exported="false"
+172-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:181:13-37
+173            android:screenOrientation="portrait"
+173-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:178:13-49
+174            android:theme="@style/Theme.JingyuPay.NoActionBar" >
+174-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:182:13-63
+175            <meta-data
+175-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+176                android:name="android.app.lib_name"
+176-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+177                android:value="" />
+177-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+178        </activity>
+179        <activity
+179-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:187:9-195:20
+180            android:name="com.jingyu.pay.ui.group.GroupListctivity"
+180-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:190:13-68
+181            android:exported="false"
+181-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:191:13-37
+182            android:screenOrientation="portrait" >
+182-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:188:13-49
+183            <meta-data
+183-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+184                android:name="android.app.lib_name"
+184-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+185                android:value="" />
+185-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+186        </activity>
+187        <activity
+187-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:196:9-204:20
+188            android:name="com.jingyu.pay.ui.transaction.TransactionActivity"
+188-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:199:13-77
+189            android:exported="false"
+189-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:200:13-37
+190            android:screenOrientation="portrait" >
+190-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:197:13-49
+191            <meta-data
+191-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+192                android:name="android.app.lib_name"
+192-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+193                android:value="" />
+193-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+194        </activity>
+195        <activity
+195-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:205:9-213:20
+196            android:name="com.jingyu.pay.ui.sellrecord.SellRecordActivity"
+196-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:208:13-75
+197            android:exported="false"
+197-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:209:13-37
+198            android:screenOrientation="portrait" >
+198-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:206:13-49
+199            <meta-data
+199-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+200                android:name="android.app.lib_name"
+200-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+201                android:value="" />
+201-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+202        </activity>
+203        <activity
+203-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:214:9-222:20
+204            android:name="com.jingyu.pay.ui.buyrecord.BuyRecordActivity"
+204-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:217:13-73
+205            android:exported="false"
+205-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:218:13-37
+206            android:screenOrientation="portrait" >
+206-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:215:13-49
+207            <meta-data
+207-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+208                android:name="android.app.lib_name"
+208-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+209                android:value="" />
+209-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+210        </activity>
+211        <activity
+211-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:223:9-232:20
+212            android:name="com.jingyu.pay.ui.purchasehistory.PurchaseHistoryActivity"
+212-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:226:13-85
+213            android:exported="false"
+213-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:227:13-37
+214            android:screenOrientation="portrait"
+214-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:224:13-49
+215            android:theme="@style/Theme.JingyuPay.NoActionBar" >
+215-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:228:13-63
+216            <meta-data
+216-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+217                android:name="android.app.lib_name"
+217-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+218                android:value="" />
+218-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+219        </activity>
+220        <activity
+220-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:233:9-248:20
+221            android:name="com.jingyu.pay.SplashActivity"
+221-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:236:13-57
+222            android:exported="true"
+222-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:237:13-36
+223            android:screenOrientation="portrait"
+223-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:234:13-49
+224            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
+224-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:238:13-80
+225            <intent-filter>
+225-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:239:13-243:29
+226                <action android:name="android.intent.action.MAIN" />
+226-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:240:17-69
+226-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:240:25-66
+227
+228                <category android:name="android.intent.category.LAUNCHER" />
+228-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:242:17-77
+228-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:242:27-74
+229            </intent-filter>
+230
+231            <meta-data
+231-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+232                android:name="android.app.lib_name"
+232-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+233                android:value="" />
+233-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+234        </activity>
+235        <activity
+235-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:249:9-258:20
+236            android:name="com.jingyu.pay.ui.login.LoginActivity"
+236-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:252:13-65
+237            android:exported="false"
+237-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:253:13-37
+238            android:screenOrientation="portrait"
+238-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:250:13-49
+239            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
+239-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:254:13-80
+240            <meta-data
+240-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+241                android:name="android.app.lib_name"
+241-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+242                android:value="" />
+242-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+243        </activity>
+244        <activity
+244-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:259:9-269:20
+245            android:name="com.jingyu.pay.MainActivity"
+245-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:262:13-55
+246            android:exported="true"
+246-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:263:13-36
+247            android:label="@string/app_name"
+247-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:264:13-45
+248            android:screenOrientation="portrait"
+248-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:260:13-49
+249            android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden" >
+249-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:265:13-82
+250            <meta-data
+250-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+251                android:name="android.app.lib_name"
+251-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+252                android:value="" />
+252-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+253        </activity>
+254        <activity
+254-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:270:9-278:20
+255            android:name="com.jingyu.pay.ui.accountchange.AccountChangeActivity"
+255-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:273:13-81
+256            android:exported="false"
+256-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:274:13-37
+257            android:screenOrientation="portrait" >
+257-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:271:13-49
+258            <meta-data
+258-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:154:13-156:36
+259                android:name="android.app.lib_name"
+259-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:155:17-52
+260                android:value="" />
+260-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:156:17-33
+261        </activity>
+262
+263        <meta-data
+263-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:280:9-282:36
+264            android:name="xposedmodule"
+264-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:281:13-40
+265            android:value="true" />
+265-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:282:13-33
+266        <meta-data
+266-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:283:9-285:36
+267            android:name="xposeddescription"
+267-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:284:13-45
+268            android:value="模块描述" />
+268-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:285:13-33
+269        <meta-data
+269-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:286:9-288:34
+270            android:name="xposedminversion"
+270-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:287:13-44
+271            android:value="54" />
+271-->/Users/JackPan/PayHelper-Android/app/src/main/AndroidManifest.xml:288:13-31
+272
+273        <!-- <activity -->
+274        <!-- android:name="com.journeyapps.barcodescanner.CaptureActivity" -->
+275        <!-- android:screenOrientation="fullSensor" -->
+276        <!-- tools:replace="screenOrientation" /> -->
+277        <service
+277-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:8:9-14:19
+278            android:name="com.google.firebase.components.ComponentDiscoveryService"
+278-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:9:13-84
+279            android:directBootAware="true"
+279-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:35:13-43
+280            android:exported="false" >
+280-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:10:13-37
+281            <meta-data
+281-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:11:13-13:85
+282                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+282-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:12:17-126
+283                android:value="com.google.firebase.components.ComponentRegistrar" />
+283-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/dc4f7079b974e121355d286a606dc681/transformed/jetified-firebase-analytics-ktx-21.1.1/AndroidManifest.xml:13:17-82
+284            <meta-data
+284-->[com.google.firebase:firebase-database:20.0.6] /Users/JackPan/.gradle/caches/transforms-3/d0e84f73042dd2008be7495216931744/transformed/jetified-firebase-database-20.0.6/AndroidManifest.xml:32:13-34:85
+285                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+285-->[com.google.firebase:firebase-database:20.0.6] /Users/JackPan/.gradle/caches/transforms-3/d0e84f73042dd2008be7495216931744/transformed/jetified-firebase-database-20.0.6/AndroidManifest.xml:33:17-109
+286                android:value="com.google.firebase.components.ComponentRegistrar" />
+286-->[com.google.firebase:firebase-database:20.0.6] /Users/JackPan/.gradle/caches/transforms-3/d0e84f73042dd2008be7495216931744/transformed/jetified-firebase-database-20.0.6/AndroidManifest.xml:34:17-82
+287            <meta-data
+287-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/f97497420e00d2d11cd4d35ac93e9d03/transformed/jetified-firebase-common-ktx-20.1.2/AndroidManifest.xml:15:13-17:85
+288                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+288-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/f97497420e00d2d11cd4d35ac93e9d03/transformed/jetified-firebase-common-ktx-20.1.2/AndroidManifest.xml:16:17-113
+289                android:value="com.google.firebase.components.ComponentRegistrar" />
+289-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/f97497420e00d2d11cd4d35ac93e9d03/transformed/jetified-firebase-common-ktx-20.1.2/AndroidManifest.xml:17:17-82
+290            <meta-data
+290-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/af1d835a699794be57068f103dd73d84/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:31:13-33:85
+291                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+291-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/af1d835a699794be57068f103dd73d84/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:32:17-139
+292                android:value="com.google.firebase.components.ComponentRegistrar" />
+292-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/af1d835a699794be57068f103dd73d84/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:33:17-82
+293            <meta-data
+293-->[com.google.firebase:firebase-installations:17.0.2] /Users/JackPan/.gradle/caches/transforms-3/c0b4607924b7ae8265e1cf9d53bd2c00/transformed/jetified-firebase-installations-17.0.2/AndroidManifest.xml:18:13-20:85
+294                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+294-->[com.google.firebase:firebase-installations:17.0.2] /Users/JackPan/.gradle/caches/transforms-3/c0b4607924b7ae8265e1cf9d53bd2c00/transformed/jetified-firebase-installations-17.0.2/AndroidManifest.xml:19:17-127
+295                android:value="com.google.firebase.components.ComponentRegistrar" />
+295-->[com.google.firebase:firebase-installations:17.0.2] /Users/JackPan/.gradle/caches/transforms-3/c0b4607924b7ae8265e1cf9d53bd2c00/transformed/jetified-firebase-installations-17.0.2/AndroidManifest.xml:20:17-82
+296        </service>
+297
+298        <activity
+298-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:12:9-17:63
+299            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
+299-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:13:13-74
+300            android:configChanges="orientation|keyboardHidden"
+300-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:14:13-63
+301            android:screenOrientation="portrait"
+301-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:15:13-49
+302            android:theme="@style/Theme.AppCompat.NoActionBar"
+302-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:16:13-63
+303            android:windowSoftInputMode="stateAlwaysHidden" />
+303-->[cn.yipianfengye.android:zxing-library:2.1] /Users/JackPan/.gradle/caches/transforms-3/39422c6a89aca9bacd3c5a7753ad9582/transformed/jetified-zxing-library-2.1/AndroidManifest.xml:17:13-60
+304
+305        <provider
+305-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:26:9-31:39
+306            android:name="com.google.firebase.provider.FirebaseInitProvider"
+306-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:27:13-77
+307            android:authorities="com.jingyu.pay.firebaseinitprovider"
+307-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:28:13-72
+308            android:directBootAware="true"
+308-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:29:13-43
+309            android:exported="false"
+309-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:30:13-37
+310            android:initOrder="100" />
+310-->[com.google.firebase:firebase-common:20.1.2] /Users/JackPan/.gradle/caches/transforms-3/aa1b8b2033ca9da039a3d96ccfc0b2a4/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:31:13-36
+311
+312        <activity
+312-->[com.google.android.gms:play-services-base:18.0.1] /Users/JackPan/.gradle/caches/transforms-3/f9ea41be9e44d87970e9a5f816f7ef1c/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+313            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+313-->[com.google.android.gms:play-services-base:18.0.1] /Users/JackPan/.gradle/caches/transforms-3/f9ea41be9e44d87970e9a5f816f7ef1c/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+314            android:exported="false"
+314-->[com.google.android.gms:play-services-base:18.0.1] /Users/JackPan/.gradle/caches/transforms-3/f9ea41be9e44d87970e9a5f816f7ef1c/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+315            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+315-->[com.google.android.gms:play-services-base:18.0.1] /Users/JackPan/.gradle/caches/transforms-3/f9ea41be9e44d87970e9a5f816f7ef1c/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+316
+317        <receiver
+317-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:29:9-33:20
+318            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+318-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:30:13-85
+319            android:enabled="true"
+319-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:31:13-35
+320            android:exported="false" >
+320-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:32:13-37
+321        </receiver>
+322
+323        <service
+323-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:35:9-38:40
+324            android:name="com.google.android.gms.measurement.AppMeasurementService"
+324-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:36:13-84
+325            android:enabled="true"
+325-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:37:13-35
+326            android:exported="false" />
+326-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:38:13-37
+327        <service
+327-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:39:9-43:72
+328            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+328-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:40:13-87
+329            android:enabled="true"
+329-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:41:13-35
+330            android:exported="false"
+330-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:42:13-37
+331            android:permission="android.permission.BIND_JOB_SERVICE" />
+331-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/JackPan/.gradle/caches/transforms-3/9f58d7ab12d20949f37824d4f04f6f21/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:43:13-69
+332
+333        <meta-data
+333-->[com.google.android.gms:play-services-basement:18.1.0] /Users/JackPan/.gradle/caches/transforms-3/271246067f474f6d5198887abc058e70/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+334            android:name="com.google.android.gms.version"
+334-->[com.google.android.gms:play-services-basement:18.1.0] /Users/JackPan/.gradle/caches/transforms-3/271246067f474f6d5198887abc058e70/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+335            android:value="@integer/google_play_services_version" />
+335-->[com.google.android.gms:play-services-basement:18.1.0] /Users/JackPan/.gradle/caches/transforms-3/271246067f474f6d5198887abc058e70/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+336
+337        <provider
+337-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+338            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+338-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+339            android:authorities="com.jingyu.pay.lifecycle-process"
+339-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+340            android:exported="false"
+340-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+341            android:multiprocess="true" />
+341-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/JackPan/.gradle/caches/transforms-3/4833b9a703e817654043c0364e378e8c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+342    </application>
+343
+344</manifest>
