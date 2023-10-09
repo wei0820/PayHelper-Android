@@ -11,7 +11,6 @@ import java.io.IOException
 class LoginDateModel {
 
     fun setUserLogin(loginid:String,password:String,code:String,loginrResponse: LoginrResponse){
-        Log.d("Jack",loginid)
         var jsonObject= JSONObject()
         jsonObject.put("loginid",loginid)
         jsonObject.put("password",password)
@@ -29,9 +28,6 @@ class LoginDateModel {
             .post(requestBody)
             .header("content-type","application/json")
             .build()
-        Log.d("Jack",Constant.API_URL + "api/auth")
-
-
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
 
@@ -41,6 +37,32 @@ class LoginDateModel {
                 loginrResponse.getResponse( response.body?.string()!!)
             }
         })
+
+    }
+
+    fun getGoogle(loginrResponse: LoginrResponse){
+
+        var jsonObject= JSONObject()
+        var jsonStr=jsonObject.toString()
+        val contentType: MediaType = "application/json".toMediaType()
+        //调用请求
+        val requestBody = jsonStr.toRequestBody(contentType)
+        val client = OkHttpClient()
+        val request = Request.Builder()
+            .url(Constant.API_URL + "api/auth/google")
+            .get()
+            .header("content-type","application/json")
+            .build()
+        client.newCall(request).enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+
+            }
+
+            override fun onResponse(call: Call, response: Response) {
+                loginrResponse.getResponse( response.body?.string()!!)
+            }
+        })
+
 
     }
 
