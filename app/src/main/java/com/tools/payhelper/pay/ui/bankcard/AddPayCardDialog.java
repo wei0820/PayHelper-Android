@@ -100,7 +100,7 @@ public class AddPayCardDialog extends AlertDialog {
         view.findViewById(R.id.okBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String n = "支付宝转帐";
+                String n = "支付宝转账";
                 String p = pd.getText().toString();
                 String t = "NA";
                 String google = googleedt.getText().toString();

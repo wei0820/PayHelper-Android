@@ -27,7 +27,6 @@ class AccountChangeDateModel {
         val urlBuilder: HttpUrl.Builder = (BaseUrl + "api/user/FrozenRecords?").toHttpUrlOrNull()!!.newBuilder()
         urlBuilder.addQueryParameter("date", "")
         val url: String = urlBuilder.build().toString()
-        Log.d("Jack",url);
 
         //调用请求
         val requestBody = jsonStr.toRequestBody(contentType)

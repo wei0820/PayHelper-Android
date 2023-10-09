@@ -16,7 +16,6 @@ class BuyRecodeDateModel {
 
     var BaseUrl : String = Constant.API_URL
     fun getBuyRecordList(context: Context,date :String,accountCahngeResponse: AccountCahngeResponse){
-        Log.d("Jack",date);
 
         var jsonObject= JSONObject()
         jsonObject.put("token","")
@@ -27,7 +26,6 @@ class BuyRecodeDateModel {
         val urlBuilder: HttpUrl.Builder = (BaseUrl + "api/user/payment?").toHttpUrlOrNull()!!.newBuilder()
         urlBuilder.addQueryParameter("date", date)
         val url: String = urlBuilder.build().toString()
-        Log.d("Jack",url);
 
         //调用请求
         val requestBody = jsonStr.toRequestBody(contentType)

@@ -50,17 +50,22 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
         val recyclerView: RecyclerView =  root.findViewById(R.id.recycler_view)
-
         switch =  root.findViewById(R.id.switch1);
+        checkOpen()
 
         switch.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { compoundButton, b ->
             val ischeckString = if (b) "卖币接单中" else "卖币暂停接单"
             switch.setText(ischeckString)
+
             if (b){
                 openSell()
+                PayHelperUtils.saveSellState(requireActivity(),true)
+
 
             }else{
                 closeSell()
+                PayHelperUtils.saveSellState(requireActivity(),false)
+
 
             }
         })
@@ -99,9 +104,19 @@ class DashboardFragment : Fragment() {
 
 
     }
+    fun checkOpen(){
+        var b = PayHelperUtils.getSellState(requireActivity())
+        switch.isChecked = b
+        if (b){
+            openSell()
+
+        }else{
+            closeSell()
+        }
+    }
     fun openSell(){
         sellViewModel.setSellSetting(requireActivity()).observe(requireActivity(), Observer {
-            Log.d("Jack","開啟"+ it.msg)
+            Log.d("Jack","openSell："+it.msg)
 
 
         })
@@ -109,13 +124,13 @@ class DashboardFragment : Fragment() {
 
     fun closeSell(){
         sellViewModel.setCloseSellSetting(requireActivity()).observe(requireActivity(), Observer {
-            Log.d("Jack","關閉"+ it.msg)
+            Log.d("Jack","closeSell："+it.msg)
+
         })
     }
     fun cancelToUrl(id : String){
 
         var url : String = PayHelperUtils.getOpenUrl(requireActivity()) + "voucher/" +id +"?actionName=cancel"
-        Log.d("Jack","關閉"+ url)
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
         intent.data = Uri.parse(url)
@@ -162,19 +177,15 @@ class DashboardFragment : Fragment() {
 
     override fun onDestroy() {
         super.onDestroy()
-        closeSell()
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("Jack","onCreate")
 
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("Jack","onResume")
         getList()
 
 
@@ -231,7 +242,6 @@ class DashboardFragment : Fragment() {
 //            holder.addButton.text = info.state
 
             holder.cancelButton.setOnClickListener {
-                Log.d("Jack",info.id)
                 mfragment.cancelToUrl(info.id);
             }
 

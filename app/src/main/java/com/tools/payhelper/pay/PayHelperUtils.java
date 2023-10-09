@@ -196,4 +196,18 @@ public class PayHelperUtils {
         return sharedPreferences.getString(Constant.USER_AlipayRebate, "");
     }
 
+
+    public static void saveSellState(Context context, boolean token) {
+        SharedPreferences.Editor edit = context.getSharedPreferences(Constant.CHECKSELLSTATE, Context.MODE_PRIVATE).edit();
+        edit.putBoolean(Constant.CHECKSELLSTATE, token).apply();
+    }
+
+    public static boolean getSellState(Context context) {
+
+        SharedPreferences sharedPreferences = context.getSharedPreferences(Constant.CHECKSELLSTATE, Context.MODE_PRIVATE);
+
+        return sharedPreferences.getBoolean(Constant.CHECKSELLSTATE, false);
+    }
+
+
 }

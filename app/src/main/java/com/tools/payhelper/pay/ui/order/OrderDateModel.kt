@@ -15,7 +15,6 @@ class OrderDateModel {
     var BaseUrl : String = "https://api2.channel-sign.com/"
 
     fun getPaymentMatching(context: Context, orderResponse: OrderResponse){
-        Log.d("Jack","test");
 
         var jsonObject= JSONObject()
         jsonObject.put("token","")

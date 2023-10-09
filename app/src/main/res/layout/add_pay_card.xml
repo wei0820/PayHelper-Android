@@ -21,7 +21,7 @@
             android:layout_height="40dp"
             android:background="@drawable/dialog_top_bar"
             android:gravity="center"
-            android:text="支付宝转帐"
+            android:text="支付宝转账"
             android:textSize="18sp"
             android:textColor="@android:color/white" />
 
