@@ -1,8 +1,14 @@
 package com.jingyu.pay.ui.login
 
-
+import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.os.PowerManager
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.Observer
@@ -10,10 +16,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.jingyu.pay.BasicActivity
 import com.jingyu.pay.MainActivity
 import com.tools.payhelper.R
+import com.tools.payhelper.UpdateAlertDialog
 import com.tools.payhelper.pay.PayHelperUtils
 import com.tools.payhelper.pay.ToastManager
-
 import com.tools.payhelper.ui.login.LoginViewModelFactory
+import java.lang.String
+
 
 class LoginActivity : BasicActivity() {
     val loginViewModel: LoginViewModel by lazy {
@@ -32,6 +40,9 @@ class LoginActivity : BasicActivity() {
         edt = findViewById(R.id.edt)
         edt2 = findViewById(R.id.edt2)
         edt3 = findViewById(R.id.edt3)
+
+        check()
+//        checkVresion()
 
         loginButton.setOnClickListener {
             var loginid = edt.text.toString()
@@ -83,4 +94,95 @@ class LoginActivity : BasicActivity() {
 
 
     }
+    fun  checkVresion(){
+        loginViewModel.getUpdate().observe(this, Observer {
+            if (PayHelperUtils.getVersionCode()<it.data.versionCode){
+                val dialog = UpdateAlertDialog(this@LoginActivity)
+                dialog.setMessage(String.format("欢迎使用%s原生V%s版本",
+                    getString(R.string.app_name),
+                    it.data.versionName))
+                dialog.setIsForcedUpdate(true)
+                dialog.show()
+            }
+
+        })
+    }
+
+    fun check(){
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                val permissionList = ArrayList<kotlin.String>()
+                permissionList.add(Manifest.permission.CAMERA)
+                permissionList.add(Manifest.permission.READ_SMS)
+                permissionList.add(Manifest.permission.RECEIVE_SMS)
+                permissionList.add(Manifest.permission.READ_PHONE_STATE)
+                permissionList.add(Manifest.permission.ACCESS_FINE_LOCATION)
+                permissionList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                permissionList.add(Manifest.permission.READ_EXTERNAL_STORAGE)
+                permissionList.add(Manifest.permission.INTERNET)
+                checkAndRequestPermissions(permissionList)
+            }
+        } catch (ignored: Exception) {
+            Log.d("Jack",ignored.localizedMessage)
+
+        }
+    }
+    private fun checkAndRequestPermissions(arrayList: ArrayList<kotlin.String>) {
+        val arrayList2: ArrayList<kotlin.String> = ArrayList<kotlin.String>(arrayList)
+        val it = arrayList2.iterator()
+        while (it.hasNext()) {
+            if (checkSelfPermission((it.next() as kotlin.String)) == PackageManager.PERMISSION_GRANTED) {
+                it.remove()
+            }
+        }
+        if (arrayList2.size != 0) {
+            requestPermissions((arrayList2.toTypedArray() as Array<kotlin.String?>), 1)
+        }
+    }
+
+    @SuppressLint("WrongConstant")
+    fun ignoreBatteryOptimization() {
+        try {
+            if (!(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && (getSystemService("power") as PowerManager).isIgnoringBatteryOptimizations(
+                    packageName
+                )) || Build.VERSION.SDK_INT < Build.VERSION_CODES.M
+            ) {
+                val intent = Intent("android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS")
+                intent.data = Uri.parse("package:$packageName")
+                startActivity(intent)
+            }
+        } catch (ignored: java.lang.Exception) {
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<kotlin.String>,
+        grantResults: IntArray,
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        try {
+            if (requestCode == 1) {
+                for (i in grantResults.indices) {
+                    if (grantResults[i] == 0) {
+
+
+                    } else {
+//                        sendmsg(permissions[i] + " 权限授以失败: " + grantResults[i])
+                    }
+                }
+            }
+        } catch (ignored: java.lang.Exception) {
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+
+        // if the intentResult is null then
+        // toast a message as "cancelled"
+
+    }
+
 }

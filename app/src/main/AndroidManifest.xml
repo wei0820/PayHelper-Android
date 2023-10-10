@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.tools.payhelper"
-    android:versionCode="10"
-    android:versionName="1.0.9">
+    android:versionCode="1"
+    android:versionName="1.0.1">
 
 
 
@@ -15,6 +15,7 @@
     <uses-permission android:name="android.permission.SET_TIME_ZONE"
         tools:ignore="ProtectedPermissions" />
 
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -307,6 +308,8 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths"/>
         </provider>
+
+
     </application>
 
 </manifest>

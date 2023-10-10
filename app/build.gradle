@@ -175,6 +175,5 @@ dependencies {
     implementation 'com.permissionx.guolindev:permissionx:1.2.2'
 
     implementation 'com.squareup.picasso:picasso:2.8'
-    implementation project(':appupdatelibrary')
 
 }

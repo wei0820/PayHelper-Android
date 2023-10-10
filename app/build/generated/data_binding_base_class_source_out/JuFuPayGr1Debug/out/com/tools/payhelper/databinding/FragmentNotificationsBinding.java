@@ -45,6 +45,9 @@ public final class FragmentNotificationsBinding implements ViewBinding {
   public final ImageView img155;
 
   @NonNull
+  public final ImageView img1555;
+
+  @NonNull
   public final ImageView img2;
 
   @NonNull
@@ -75,6 +78,9 @@ public final class FragmentNotificationsBinding implements ViewBinding {
   public final RelativeLayout sellRecordLayout;
 
   @NonNull
+  public final RelativeLayout settinglayout;
+
+  @NonNull
   public final TextView text1;
 
   @NonNull
@@ -93,11 +99,12 @@ public final class FragmentNotificationsBinding implements ViewBinding {
       @NonNull RelativeLayout accountLayou, @NonNull RelativeLayout banklayout,
       @NonNull RelativeLayout buyRecordLayout, @NonNull RelativeLayout frozenrecord,
       @NonNull ImageView img1, @NonNull ImageView img13, @NonNull ImageView img14,
-      @NonNull ImageView img155, @NonNull ImageView img2, @NonNull ImageView img4,
-      @NonNull ImageView img43, @NonNull ImageView img444, @NonNull ImageView img45,
-      @NonNull RelativeLayout layoutGrouplist, @NonNull RelativeLayout layoutGroupreport,
-      @NonNull TextView navText, @NonNull RelativeLayout reportdayLayout,
-      @NonNull RelativeLayout sellRecordLayout, @NonNull TextView text1, @NonNull TextView text2,
+      @NonNull ImageView img155, @NonNull ImageView img1555, @NonNull ImageView img2,
+      @NonNull ImageView img4, @NonNull ImageView img43, @NonNull ImageView img444,
+      @NonNull ImageView img45, @NonNull RelativeLayout layoutGrouplist,
+      @NonNull RelativeLayout layoutGroupreport, @NonNull TextView navText,
+      @NonNull RelativeLayout reportdayLayout, @NonNull RelativeLayout sellRecordLayout,
+      @NonNull RelativeLayout settinglayout, @NonNull TextView text1, @NonNull TextView text2,
       @NonNull TextView text3, @NonNull TextView text4, @NonNull TextView text5) {
     this.rootView = rootView;
     this.accountLayou = accountLayou;
@@ -108,6 +115,7 @@ public final class FragmentNotificationsBinding implements ViewBinding {
     this.img13 = img13;
     this.img14 = img14;
     this.img155 = img155;
+    this.img1555 = img1555;
     this.img2 = img2;
     this.img4 = img4;
     this.img43 = img43;
@@ -118,6 +126,7 @@ public final class FragmentNotificationsBinding implements ViewBinding {
     this.navText = navText;
     this.reportdayLayout = reportdayLayout;
     this.sellRecordLayout = sellRecordLayout;
+    this.settinglayout = settinglayout;
     this.text1 = text1;
     this.text2 = text2;
     this.text3 = text3;
@@ -200,6 +209,12 @@ public final class FragmentNotificationsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.img1555;
+      ImageView img1555 = rootView.findViewById(id);
+      if (img1555 == null) {
+        break missingId;
+      }
+
       id = R.id.img2;
       ImageView img2 = rootView.findViewById(id);
       if (img2 == null) {
@@ -260,6 +275,12 @@ public final class FragmentNotificationsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.settinglayout;
+      RelativeLayout settinglayout = rootView.findViewById(id);
+      if (settinglayout == null) {
+        break missingId;
+      }
+
       id = R.id.text1;
       TextView text1 = rootView.findViewById(id);
       if (text1 == null) {
@@ -291,9 +312,9 @@ public final class FragmentNotificationsBinding implements ViewBinding {
       }
 
       return new FragmentNotificationsBinding((ConstraintLayout) rootView, accountLayou, banklayout,
-          buyRecordLayout, frozenrecord, img1, img13, img14, img155, img2, img4, img43, img444,
-          img45, layoutGrouplist, layoutGroupreport, navText, reportdayLayout, sellRecordLayout,
-          text1, text2, text3, text4, text5);
+          buyRecordLayout, frozenrecord, img1, img13, img14, img155, img1555, img2, img4, img43,
+          img444, img45, layoutGrouplist, layoutGroupreport, navText, reportdayLayout,
+          sellRecordLayout, settinglayout, text1, text2, text3, text4, text5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

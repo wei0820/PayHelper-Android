@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
 import com.tools.payhelper.pay.ui.login.LoginData
+import com.tools.payhelper.pay.ui.login.UpdateData
 import kotlinx.coroutines.launch
 
 class LoginViewModel : ViewModel() {
@@ -14,6 +15,8 @@ class LoginViewModel : ViewModel() {
 
     var homeViewModel = LoginDateModel()
     var  token  = MutableLiveData<LoginData>()
+    var  update  = MutableLiveData<UpdateData>()
+
 
     fun getUserToken(loginid:String,password:String,code:String) : LiveData<LoginData>{
 
@@ -32,6 +35,24 @@ class LoginViewModel : ViewModel() {
         })
 
         return  token;
+    }
+
+
+    fun getUpdate() :LiveData<UpdateData>{
+        homeViewModel.getUpdate(object : LoginDateModel.LoginrResponse {
+            override fun getResponse(s: String) {
+                viewModelScope.launch {
+                    if (!s.isEmpty()){
+                        Log.d("Jack",s)
+                        var userData = Gson().fromJson(s, UpdateData::class.java)
+
+                        update.value = userData
+                    }
+                }
+            }
+
+        })
+        return  update
     }
 
 

@@ -5,11 +5,23 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 
+import com.tools.payhelper.BuildConfig;
+
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class PayHelperUtils {
+
+    public static Integer getVersionCode(){
+        return  BuildConfig.VERSION_CODE;
+
+    }
+
+    public static String getVersionName(){
+        return BuildConfig.VERSION_NAME;
+
+    }
 
 
 
