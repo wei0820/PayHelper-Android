@@ -8,6 +8,8 @@ import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
 import com.tools.payhelper.pay.ui.login.LoginData
 import com.tools.payhelper.pay.ui.login.UpdateData
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
 class LoginViewModel : ViewModel() {
@@ -16,6 +18,11 @@ class LoginViewModel : ViewModel() {
     var homeViewModel = LoginDateModel()
     var  token  = MutableLiveData<LoginData>()
     var  update  = MutableLiveData<UpdateData>()
+    var version : MutableSharedFlow<UpdateData> = MutableSharedFlow<UpdateData>()
+    var _version: MutableSharedFlow<UpdateData>  = version
+    init {
+        getUpdate()
+    }
 
 
     fun getUserToken(loginid:String,password:String,code:String) : LiveData<LoginData>{
@@ -38,21 +45,41 @@ class LoginViewModel : ViewModel() {
     }
 
 
-    fun getUpdate() :LiveData<UpdateData>{
-        homeViewModel.getUpdate(object : LoginDateModel.LoginrResponse {
-            override fun getResponse(s: String) {
-                viewModelScope.launch {
-                    if (!s.isEmpty()){
-                        Log.d("Jack",s)
-                        var userData = Gson().fromJson(s, UpdateData::class.java)
+//    fun getUpdate() :LiveData<UpdateData>{
+//        homeViewModel.getUpdate(object : LoginDateModel.LoginrResponse {
+//            override fun getResponse(s: String) {
+//                viewModelScope.launch {
+//                    if (!s.isEmpty()){
+//                        Log.d("Jack",s)
+//                        var userData = Gson().fromJson(s, UpdateData::class.java)
+//
+//                        update.value = userData
+//                    }
+//                }
+//            }
+//
+//        })
+//        return  update
+//    }
 
-                        update.value = userData
-                    }
+     fun getUpdate(){
+        viewModelScope.launch {
+            homeViewModel.getUpdate().flowOn(Dispatchers.IO).catch {
+                Log.d("Jack",it.localizedMessage)
+            }.collect {
+                Log.d("Jack",it)
+                if (!it.isEmpty()){
+            var userData = Gson().fromJson(it, UpdateData::class.java)
+                    version.emit(userData)
+
                 }
-            }
 
-        })
-        return  update
+
+
+
+            }
+        }
+
     }
 
 

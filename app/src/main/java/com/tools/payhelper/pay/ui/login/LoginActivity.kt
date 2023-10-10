@@ -13,6 +13,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import com.jingyu.pay.BasicActivity
 import com.jingyu.pay.MainActivity
 import com.tools.payhelper.R
@@ -20,6 +21,9 @@ import com.tools.payhelper.UpdateAlertDialog
 import com.tools.payhelper.pay.PayHelperUtils
 import com.tools.payhelper.pay.ToastManager
 import com.tools.payhelper.ui.login.LoginViewModelFactory
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 import java.lang.String
 
 
@@ -42,7 +46,7 @@ class LoginActivity : BasicActivity() {
         edt3 = findViewById(R.id.edt3)
 
         check()
-//        checkVresion()
+        checkVresion()
 
         loginButton.setOnClickListener {
             var loginid = edt.text.toString()
@@ -95,17 +99,30 @@ class LoginActivity : BasicActivity() {
 
     }
     fun  checkVresion(){
-        loginViewModel.getUpdate().observe(this, Observer {
-            if (PayHelperUtils.getVersionCode()<it.data.versionCode){
-                val dialog = UpdateAlertDialog(this@LoginActivity)
-                dialog.setMessage(String.format("欢迎使用%s原生V%s版本",
-                    getString(R.string.app_name),
-                    it.data.versionName))
-                dialog.setIsForcedUpdate(true)
-                dialog.show()
-            }
+        lifecycleScope.launch {
 
-        })
+
+            loginViewModel._version.collect {
+                Log.d("Jack",it.data.versionName)
+                Log.d("Jack",it.data.url)
+
+            }
+        }
+
+
+
+//        loginViewModel.getUpdate().observe(this, Observer {
+//            if (PayHelperUtils.getVersionCode()<it.data.versionCode){
+//                val dialog = UpdateAlertDialog(this@LoginActivity)
+//                dialog.setMessage(String.format("欢迎使用%s原生V%s版本",
+//                    getString(R.string.app_name),
+//                    it.data.versionName))
+//                dialog.setIsForcedUpdate(true)
+//                dialog.show()
+//            }
+//
+//        })
+
     }
 
     fun check(){

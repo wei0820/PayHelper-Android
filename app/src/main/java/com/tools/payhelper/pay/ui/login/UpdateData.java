@@ -18,7 +18,7 @@ public class UpdateData {
         @SerializedName("versionCode")
         public  Integer versionCode;
         @SerializedName("url")
-        public boolean url;
+        public String  url;
 
     }
 }
