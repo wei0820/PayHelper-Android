@@ -63,12 +63,6 @@ class LoginActivity : BasicActivity() {
                 ToastManager.showToastCenter(this,"密码不得为空")
 
                 return@setOnClickListener
-
-            }else if (code.isEmpty()){
-                ToastManager.showToastCenter(this,"验证码不得为空")
-
-                return@setOnClickListener
-
             }
             loginViewModel.getUserToken(loginid,PayHelperUtils.md5(password),code).observe(this, Observer {
                 if (it!=null){
