@@ -49,4 +49,5 @@ class MainActivity : AppCompatActivity() {
         return  intent.getBooleanExtra("google",false)
 
     }
+
 }
