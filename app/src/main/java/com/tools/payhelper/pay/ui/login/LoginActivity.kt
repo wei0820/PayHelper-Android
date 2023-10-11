@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.jingyu.pay.BasicActivity
 import com.jingyu.pay.MainActivity
+import com.tencent.bugly.crashreport.CrashReport
 import com.tools.payhelper.R
 import com.tools.payhelper.UpdateAlertDialog
 import com.tools.payhelper.pay.PayHelperUtils
@@ -48,9 +49,6 @@ class LoginActivity : BasicActivity() {
 
         check()
         checkVresion()
-
-//        val dialog = AddGoogleDialog(this)
-//        dialog.show()
 
         loginButton.setOnClickListener {
             var loginid = edt.text.toString()

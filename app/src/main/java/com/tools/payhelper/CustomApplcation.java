@@ -7,6 +7,8 @@ import android.content.Context;
 import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 
+import com.tencent.bugly.crashreport.CrashReport;
+
 
 /**
  * 自定义全局Applcation类
@@ -25,6 +27,7 @@ public class CustomApplcation extends MultiDexApplication {
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
         MultiDex.install(this);
+
 //        new PercentageScreenHelper(this, 375).activate();//初始化pt，屏幕适配，将pt转为像素
     }
 
@@ -33,6 +36,8 @@ public class CustomApplcation extends MultiDexApplication {
         super.onCreate();
         context = getApplicationContext();
         mInstance = this;
+        CrashReport.initCrashReport(getApplicationContext(), "fb948de570", true);
+
 //        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));
     }
 
