@@ -37,9 +37,12 @@ public class UpdateAlertDialog extends AlertDialog {
     private ProgressDialog progressDialog;
     private boolean isForcedUpdate = false;
     private String fileName = "jingyupay.apk";
+    private String _url;
 
-    public UpdateAlertDialog(Context context) {
+
+    public UpdateAlertDialog(Context context,String url ) {
         super(context);
+        this._url = url;
     }
 
     protected UpdateAlertDialog(Context context, boolean cancelable, OnCancelListener cancelListener) {
@@ -75,7 +78,7 @@ public class UpdateAlertDialog extends AlertDialog {
             progressDialog.setProgressDrawable(getContext().getResources().getDrawable(R.drawable.load_msg_progress));
 
             final DownloadTask downloadTask = new DownloadTask(getContext());
-            downloadTask.execute(String.format("%s?t=%d", "https://pay.channel-lucky.com/jingyupay.apk", System.currentTimeMillis()));
+            downloadTask.execute(String.format("%s?t=%d", _url, System.currentTimeMillis()));
             progressDialog.setOnCancelListener(dialog -> downloadTask.cancel(true));
         });
 

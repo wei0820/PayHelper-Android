@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private  val TAG = "MainActivity"
+    var googleBoolean = false;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,5 +38,15 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         navView.selectedItemId = R.id.navigation_notifications
+    }
+
+    override fun onResume() {
+        super.onResume()
+        getData()
+    }
+
+    fun  getData() : Boolean{
+        return  intent.getBooleanExtra("google",false)
+
     }
 }

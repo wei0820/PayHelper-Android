@@ -72,13 +72,13 @@ public final class FragmentNotificationsBinding implements ViewBinding {
   public final TextView navText;
 
   @NonNull
+  public final RelativeLayout passlayout;
+
+  @NonNull
   public final RelativeLayout reportdayLayout;
 
   @NonNull
   public final RelativeLayout sellRecordLayout;
-
-  @NonNull
-  public final RelativeLayout settinglayout;
 
   @NonNull
   public final TextView text1;
@@ -103,8 +103,8 @@ public final class FragmentNotificationsBinding implements ViewBinding {
       @NonNull ImageView img4, @NonNull ImageView img43, @NonNull ImageView img444,
       @NonNull ImageView img45, @NonNull RelativeLayout layoutGrouplist,
       @NonNull RelativeLayout layoutGroupreport, @NonNull TextView navText,
-      @NonNull RelativeLayout reportdayLayout, @NonNull RelativeLayout sellRecordLayout,
-      @NonNull RelativeLayout settinglayout, @NonNull TextView text1, @NonNull TextView text2,
+      @NonNull RelativeLayout passlayout, @NonNull RelativeLayout reportdayLayout,
+      @NonNull RelativeLayout sellRecordLayout, @NonNull TextView text1, @NonNull TextView text2,
       @NonNull TextView text3, @NonNull TextView text4, @NonNull TextView text5) {
     this.rootView = rootView;
     this.accountLayou = accountLayou;
@@ -124,9 +124,9 @@ public final class FragmentNotificationsBinding implements ViewBinding {
     this.layoutGrouplist = layoutGrouplist;
     this.layoutGroupreport = layoutGroupreport;
     this.navText = navText;
+    this.passlayout = passlayout;
     this.reportdayLayout = reportdayLayout;
     this.sellRecordLayout = sellRecordLayout;
-    this.settinglayout = settinglayout;
     this.text1 = text1;
     this.text2 = text2;
     this.text3 = text3;
@@ -263,6 +263,12 @@ public final class FragmentNotificationsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.passlayout;
+      RelativeLayout passlayout = rootView.findViewById(id);
+      if (passlayout == null) {
+        break missingId;
+      }
+
       id = R.id.reportday_layout;
       RelativeLayout reportdayLayout = rootView.findViewById(id);
       if (reportdayLayout == null) {
@@ -272,12 +278,6 @@ public final class FragmentNotificationsBinding implements ViewBinding {
       id = R.id.sell_record_layout;
       RelativeLayout sellRecordLayout = rootView.findViewById(id);
       if (sellRecordLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.settinglayout;
-      RelativeLayout settinglayout = rootView.findViewById(id);
-      if (settinglayout == null) {
         break missingId;
       }
 
@@ -313,8 +313,8 @@ public final class FragmentNotificationsBinding implements ViewBinding {
 
       return new FragmentNotificationsBinding((ConstraintLayout) rootView, accountLayou, banklayout,
           buyRecordLayout, frozenrecord, img1, img13, img14, img155, img1555, img2, img4, img43,
-          img444, img45, layoutGrouplist, layoutGroupreport, navText, reportdayLayout,
-          sellRecordLayout, settinglayout, text1, text2, text3, text4, text5);
+          img444, img45, layoutGrouplist, layoutGroupreport, navText, passlayout, reportdayLayout,
+          sellRecordLayout, text1, text2, text3, text4, text5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

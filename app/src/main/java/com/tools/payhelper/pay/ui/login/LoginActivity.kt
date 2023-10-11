@@ -20,6 +20,7 @@ import com.tools.payhelper.R
 import com.tools.payhelper.UpdateAlertDialog
 import com.tools.payhelper.pay.PayHelperUtils
 import com.tools.payhelper.pay.ToastManager
+import com.tools.payhelper.pay.ui.login.AddGoogleDialog
 import com.tools.payhelper.ui.login.LoginViewModelFactory
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
@@ -47,6 +48,9 @@ class LoginActivity : BasicActivity() {
 
         check()
         checkVresion()
+
+//        val dialog = AddGoogleDialog(this)
+//        dialog.show()
 
         loginButton.setOnClickListener {
             var loginid = edt.text.toString()
@@ -82,7 +86,12 @@ class LoginActivity : BasicActivity() {
 
                             PayHelperUtils.saveUserLoginToken(this,it.data.token)
                             PayHelperUtils.saveUserLoginName(this,loginid)
-                            startActivity(Intent().setClass(this, MainActivity::class.java))
+                            var intent  = Intent()
+                            var bundle =  Bundle()
+                            bundle.putBoolean("google",it.data.google)
+                            intent.putExtras(bundle)
+                            intent.setClass(this, MainActivity::class.java)
+                            startActivity(intent)
 
                         }
 
@@ -100,11 +109,19 @@ class LoginActivity : BasicActivity() {
     }
     fun  checkVresion(){
         lifecycleScope.launch {
-
-
             loginViewModel._version.collect {
                 Log.d("Jack",it.data.versionName)
                 Log.d("Jack",it.data.url)
+                if (PayHelperUtils.getVersionCode()<it.data.versionCode){
+                    val dialog = UpdateAlertDialog(this@LoginActivity,it.data.url)
+                    dialog.setMessage(String.format("欢迎使用%s原生V%s版本",
+                        getString(R.string.app_name),
+                        it.data.versionName))
+                    dialog.setIsForcedUpdate(true)
+                    dialog.show()
+            }
+
+
 
             }
         }
@@ -112,14 +129,7 @@ class LoginActivity : BasicActivity() {
 
 
 //        loginViewModel.getUpdate().observe(this, Observer {
-//            if (PayHelperUtils.getVersionCode()<it.data.versionCode){
-//                val dialog = UpdateAlertDialog(this@LoginActivity)
-//                dialog.setMessage(String.format("欢迎使用%s原生V%s版本",
-//                    getString(R.string.app_name),
-//                    it.data.versionName))
-//                dialog.setIsForcedUpdate(true)
-//                dialog.show()
-//            }
+
 //
 //        })
 

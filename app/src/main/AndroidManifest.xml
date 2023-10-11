@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.tools.payhelper"
-    android:versionCode="1"
-    android:versionName="1.0.1">
+    android:versionCode="9"
+    android:versionName="1.0.9">
 
 
 
@@ -261,6 +261,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:screenOrientation="portrait"
 
@@ -276,6 +277,15 @@
             android:screenOrientation="portrait"
 
             android:name="com.jingyu.pay.ui.accountchange.AccountChangeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:name="com.jingyu.pay.ui.password.PasswordActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

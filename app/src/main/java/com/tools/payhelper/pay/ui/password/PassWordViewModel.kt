@@ -30,11 +30,32 @@ class PassWordViewModel : ViewModel() {
     var  paymentMatchingData = MutableLiveData<PaymentMatchingData>()
     var passWord = MutableStateFlow<SecurityData>(SecurityData())
     var _passWord = passWord
+    var securityData = MutableLiveData<SecurityData>()
 
-    fun getSecurityData(context: Context) = flow<SecurityData> {
-        passwordDateModel.setSecurity(context).flowOn(Dispatchers.IO).catch {  }.collect {
+//    fun getSecurityData(context: Context) = flow<SecurityData> {
+//        passwordDateModel.setSecurity(context).flowOn(Dispatchers.IO).catch {  }.collect {
+//
+//        }
+//    }
 
-        }
+    fun  getSecurityData(context: Context,
+                         password : String,
+                         newpassword : String,
+                         code : String) : LiveData<SecurityData>{
+        passwordDateModel.setSecurity(context,password,newpassword,code, object : PasswordDateModel.PasswordResponse {
+            override fun getResponse(s: String) {
+                viewModelScope.launch {
+                    if (!s.isEmpty()){
+                        var security = Gson().fromJson(s,SecurityData::class.java)
+                        if (security!=null){
+                            securityData.value = security
+                        }
+                    }
+                }
+            }
+
+        })
+        return securityData
+
     }
-
 }

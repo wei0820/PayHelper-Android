@@ -1,7 +1,10 @@
 package com.jingyu.pay.ui.login
 
+import android.app.Activity
 import android.util.Log
+import com.google.firebase.database.core.Context
 import com.tools.payhelper.pay.Constant
+import com.tools.payhelper.pay.PayHelperUtils
 import kotlinx.coroutines.channels.awaitClose
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaType
@@ -42,7 +45,35 @@ class LoginDateModel {
 
     }
 
-    fun getGoogle(loginrResponse: LoginrResponse){
+    fun setGoogleKey(activity: Activity,key:String,code:String,loginrResponse: LoginrResponse){
+        var jsonObject= JSONObject()
+        jsonObject.put("key",key)
+        jsonObject.put("code",code)
+        var jsonStr=jsonObject.toString()
+        val contentType: MediaType = "application/json".toMediaType()
+        //调用请求
+        val requestBody = jsonStr.toRequestBody(contentType)
+        val client = OkHttpClient()
+        val request = Request.Builder()
+            .url(Constant.API_URL + "api/auth/bindKey")
+            .post(requestBody)
+            .header("content-type","application/json")
+            .header("Authorization", "Bearer " + PayHelperUtils.getUserToken(activity))
+
+            .build()
+        client.newCall(request).enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+
+            }
+
+            override fun onResponse(call: Call, response: Response) {
+                loginrResponse.getResponse( response.body?.string()!!)
+            }
+        })
+
+    }
+
+    fun getGoogle(activity : Activity,loginrResponse: LoginrResponse){
 
         var jsonObject= JSONObject()
         var jsonStr=jsonObject.toString()
@@ -53,10 +84,13 @@ class LoginDateModel {
         val request = Request.Builder()
             .url(Constant.API_URL + "api/auth/google")
             .get()
+            .header("Authorization", "Bearer " + PayHelperUtils.getUserToken(activity))
+
             .header("content-type","application/json")
             .build()
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
+                Log.d("Jack",e.localizedMessage)
 
             }
 

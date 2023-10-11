@@ -541,7 +541,7 @@
                     android:layout_toRightOf="@+id/img3"
                     android:text="设置"></TextView>
                 <RelativeLayout
-                    android:id="@+id/settinglayout"
+                    android:id="@+id/passlayout"
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="8dp"

@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/nav_header_main.xml",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/nav_header_main.xml"
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/layout_chicken3_fragment.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/layout_chicken3_fragment.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/fragment_tools.xml",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/fragment_tools.xml"
     },
     {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/layout_chicken3_fragment.xml",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/layout_chicken3_fragment.xml"
-    },
-    {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/group_list_item.xml",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/group_list_item.xml"
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/nav_header_main.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/nav_header_main.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/gp_spinner_item_adapter.xml",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/gp_spinner_item_adapter.xml"
+    },
+    {
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/group_list_item.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/group_list_item.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/fragment_slideshow.xml",
@@ -76,12 +76,12 @@
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/nav_header.xml"
     },
     {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/activity_bank_card_list.xml",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/activity_bank_card_list.xml"
-    },
-    {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/fragment_second.xml",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/fragment_second.xml"
+    },
+    {
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/activity_bank_card_list.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/activity_bank_card_list.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/dialog_user_order.xml",
@@ -90,6 +90,10 @@
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/message_item_view.xml",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/message_item_view.xml"
+    },
+    {
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/activity_password.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/activity_password.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/layout_chicken4_fragment.xml",
@@ -198,6 +202,10 @@
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/oreder_item_view.xml",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/oreder_item_view.xml"
+    },
+    {
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/add_google.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/add_google.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/reportday_list_item.xml",

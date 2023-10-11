@@ -1,6 +1,5 @@
 package com.jingyu.pay.ui.notifications
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -13,18 +12,24 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
+import com.jingyu.pay.MainActivity
 import com.jingyu.pay.ui.accountchange.AccountChangeActivity
 import com.jingyu.pay.ui.bankcard.BankCardListActivity
 import com.jingyu.pay.ui.buyrecord.BuyRecordActivity
 import com.jingyu.pay.ui.group.GroupListctivity
 import com.jingyu.pay.ui.group.GroupReportActivity
 import com.jingyu.pay.ui.group.ReportDayActivity
+import com.jingyu.pay.ui.password.PasswordActivity
 import com.jingyu.pay.ui.sellrecord.SellRecordActivity
 import com.jingyu.pay.ui.transaction.TransactionActivity
 import com.tools.payhelper.R
 import com.tools.payhelper.databinding.FragmentNotificationsBinding
 import com.tools.payhelper.pay.PayHelperUtils
-import java.net.Inet4Address
+import com.tools.payhelper.pay.ToastManager
+import com.tools.payhelper.pay.ui.bankcard.AddCardDialog
+import com.tools.payhelper.pay.ui.login.AddGoogleDialog
+import kotlinx.coroutines.launch
 
 class NotificationsFragment : Fragment() ,View.OnClickListener{
 
@@ -44,6 +49,7 @@ class NotificationsFragment : Fragment() ,View.OnClickListener{
     lateinit var layout_groupreport : RelativeLayout
     lateinit var banklayout : RelativeLayout
     lateinit var reportday_layout :RelativeLayout
+    lateinit var passlayout :RelativeLayout
     lateinit var text1 :TextView
     lateinit var text2:TextView
     lateinit var text3 :TextView
@@ -60,7 +66,7 @@ class NotificationsFragment : Fragment() ,View.OnClickListener{
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         val notificationsViewModel =
             ViewModelProvider(this).get(NotificationsViewModel::class.java)
@@ -82,6 +88,7 @@ class NotificationsFragment : Fragment() ,View.OnClickListener{
         layout_groupreport = root.findViewById(R.id.layout_groupreport)
         banklayout = root.findViewById(R.id.banklayout)
         reportday_layout = root.findViewById(R.id.reportday_layout)
+        passlayout = root.findViewById(R.id.passlayout);
         buy_record_layout.setOnClickListener(this)
         sell_record_layout.setOnClickListener(this)
         frozenrecord.setOnClickListener(this)
@@ -91,6 +98,7 @@ class NotificationsFragment : Fragment() ,View.OnClickListener{
         layout_groupreport.setOnClickListener(this)
         banklayout.setOnClickListener(this)
         reportday_layout.setOnClickListener(this)
+        passlayout.setOnClickListener(this)
         return root
     }
 
@@ -123,6 +131,11 @@ class NotificationsFragment : Fragment() ,View.OnClickListener{
 
         })
 
+        getActivityData()
+
+
+
+
     }
 
     override fun onClick(p0: View?) {
@@ -135,7 +148,35 @@ class NotificationsFragment : Fragment() ,View.OnClickListener{
             R.id.layout_groupreport ->startActivity(Intent().setClass(requireActivity(),GroupReportActivity::class.java))
             R.id.banklayout ->startActivity(Intent().setClass(requireActivity(),BankCardListActivity::class.java))
             R.id.reportday_layout->startActivity(Intent().setClass(requireActivity(),ReportDayActivity::class.java))
+            R.id.passlayout -> startActivity(Intent().setClass(requireActivity(), PasswordActivity::class.java))
         }
+    }
+
+    fun  getActivityData(){
+        val activity: MainActivity? = activity as MainActivity?
+
+        var boolean = activity!!.getData()
+
+        if (boolean){
+            val dialog = AddGoogleDialog(requireActivity())
+            dialog.setAddBankCallback {
+                if (it!=null){
+                    viewLifecycleOwner.lifecycleScope.launch {
+                        if (it.code==0){
+                            ToastManager.showToastCenter(requireActivity(),it.msg)
+                            dialog.dismiss()
+
+                        }else{
+                            ToastManager.showToastCenter(requireActivity(),it.msg)
+
+                        }
+                    }
+                }
+            }
+            dialog.show()
+
+        }
+
     }
 
 
