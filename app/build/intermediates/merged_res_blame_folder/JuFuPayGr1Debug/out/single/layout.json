@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/layout_chicken3_fragment.xml",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/layout_chicken3_fragment.xml"
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/nav_header_main.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/nav_header_main.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/fragment_tools.xml",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/fragment_tools.xml"
     },
     {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/nav_header_main.xml",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/nav_header_main.xml"
-    },
-    {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/gp_spinner_item_adapter.xml",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/gp_spinner_item_adapter.xml"
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/layout_chicken3_fragment.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/layout_chicken3_fragment.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/group_list_item.xml",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/group_list_item.xml"
+    },
+    {
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/gp_spinner_item_adapter.xml",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/gp_spinner_item_adapter.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/incremental/mergeJuFuPayGr1DebugResources/stripped.dir/layout/fragment_slideshow.xml",

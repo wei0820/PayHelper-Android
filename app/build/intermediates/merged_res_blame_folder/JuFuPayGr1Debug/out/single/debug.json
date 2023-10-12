@@ -12,20 +12,20 @@
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/drawable/bg_blue.xml"
     },
     {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/res/merged/JuFuPayGr1/debug/layout_content_purchase_history.xml.flat",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/content_purchase_history.xml"
-    },
-    {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/res/merged/JuFuPayGr1/debug/layout_activity_bank_card_list.xml.flat",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/activity_bank_card_list.xml"
     },
     {
-        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/res/merged/JuFuPayGr1/debug/layout_fragment_slideshow.xml.flat",
-        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/fragment_slideshow.xml"
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/res/merged/JuFuPayGr1/debug/layout_content_purchase_history.xml.flat",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/content_purchase_history.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/res/merged/JuFuPayGr1/debug/menu_drawer_view.xml.flat",
         "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/menu/drawer_view.xml"
+    },
+    {
+        "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/res/merged/JuFuPayGr1/debug/layout_fragment_slideshow.xml.flat",
+        "source": "/Users/JackPan/PayHelper-Android/app/src/main/res/layout/fragment_slideshow.xml"
     },
     {
         "merged": "/Users/JackPan/PayHelper-Android/app/build/intermediates/res/merged/JuFuPayGr1/debug/layout_nav_header_main.xml.flat",

@@ -102,8 +102,7 @@ class LoginActivity : BasicActivity() {
     fun  checkVresion(){
         lifecycleScope.launch {
             loginViewModel._version.collect {
-                Log.d("Jack",it.data.versionName)
-                Log.d("Jack",it.data.url)
+
                 if (PayHelperUtils.getVersionCode()<it.data.versionCode){
                     val dialog = UpdateAlertDialog(this@LoginActivity,it.data.url)
                     dialog.setMessage(String.format("欢迎使用%s原生V%s版本",
