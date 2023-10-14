@@ -90,7 +90,6 @@ public class BitMapUtil {
      * 对图片压缩
      *
      * */
-
     public static Bitmap compressPicture(String imgPath) {
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
@@ -98,7 +97,7 @@ public class BitMapUtil {
         Log.e( "log","未压缩之前图片的宽：" + options.outWidth + "--未压缩之前图片的高："
                 + options.outHeight + "--未压缩之前图片大小:" + options.outWidth * options.outHeight * 4 / 1024 / 1024 + "M");
 
-        options.inSampleSize = calculateInSampleSize(options, 100, 100);
+        options.inSampleSize = calculateInSampleSize(options, 150, 150);
         Log.e( "log" ," inSampleSize:" + options.inSampleSize);
         options.inJustDecodeBounds = false;
         Bitmap afterCompressBm = BitmapFactory.decodeFile(imgPath, options);
@@ -116,8 +115,8 @@ public class BitMapUtil {
 
         if (height > reqHeight || width > reqWidth) {
 
-            final int halfHeight = height / 2;
-            final int halfWidth = width / 2;
+            final int halfHeight = height / 4;
+            final int halfWidth = width / 4;
 
             while ((halfHeight / inSampleSize) >= reqHeight
                     && (halfWidth / inSampleSize) >= reqWidth) {
